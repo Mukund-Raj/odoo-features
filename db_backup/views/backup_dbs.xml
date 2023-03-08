@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="backup_dbs_list">
+            <field name="name">To be backups list</field>
+            <field name="model">backup.db</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="display_name"/>
+                    <field name="backups_to_keep" class="o_force_ltr"/>
+                    <field name="with_sql"/>
+                    <field name="with_data"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="backup_dbs_form">
+            <field name="name">To be backup form</field>
+            <field name="model">backup.db</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="display_name"/>
+                            <field name="backups_to_keep"/>
+                            <field name="with_sql"/>
+                            <field name="with_data"/>
+                            <field name="backup_notified_partners" widget="many2many_tags"/>
+                        </group>
+                        <group string="All Backups">
+                            <field name="rel_all_backups" widget="one2many" readonly="1" nolabel="1"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

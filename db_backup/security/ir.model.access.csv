@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_db_backup_db_backup_user,access_db_backup_db_backup_user,model_db_backup_db_backup,db_backup.group_database_backups_user,1,0,0,0
+access_db_backup_db_backup_admin,access_db_backup_db_backup_admin,model_db_backup_db_backup,db_backup.group_database_backups_admin,1,1,1,1
+access_backup_db_admin,access_backup_db_admin,model_backup_db,db_backup.group_database_backups_admin,1,1,1,1
+access_backup_db,access_backup_db,model_backup_db,db_backup.group_database_backups_user,1,0,0,0

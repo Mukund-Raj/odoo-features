@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="db_backup.list">
+            <field name="name">db_backup list</field>
+            <field name="model">db_backup.db_backup</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="create_date"/>
+                    <field name="create_uid"/>
+                    <field name="backup_db"/>
+                    <button string="Download SQL Backup" type="object" name="download_sql_backup"
+                            class="btn btn-primary m-1"/>
+                    <button string="Download Data Backup" type="object" name="download_filestore_backup"
+                            class="btn btn-primary m-1"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="db_backup.form">
+            <field name="name">db_backup form</field>
+            <field name="model">db_backup.db_backup</field>
+            <field name="arch" type="xml">
+                <form edit="0" create="0">
+                    <sheet>
+                        <group>
+                            <field name="create_uid"/>
+                            <field name="backup_db"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
