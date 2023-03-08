@@ -1,7 +1,7 @@
 # odoo-features
 This repo contains some odoo features that are directly not available in odoo community versions
 
-# Many2many field option
+# `many2many_field`  - Many2many field option
 * This module exposed an option called initial_view so that we can control if we
 want to open search view or form view whenever we are clicking Add a line in tree view
 * Example: 
@@ -16,7 +16,7 @@ the record as soon as you create it you have to save the parent form for it but
 in many2many you can create the record as soon as you hit Save & Close.
 
 
-# Add different action in odoo default create button
+# `odoo_create_button` - Add different action in odoo default create button
 
 `Add context key create_do_action so that we can perform a 
 do_action instead of default create procedure of odoo,
@@ -30,7 +30,7 @@ hit create in the list/kanban view
 
 
 
-#### Add extra buttons in Control panel
+# `extra_control_panel_buttons` - Add extra buttons in Control panel
 
 #### How it works
 
