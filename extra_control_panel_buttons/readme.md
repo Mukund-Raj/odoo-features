@@ -1,4 +1,4 @@
-#### Add extra buttons in Control panel
+# `extra_control_panel_buttons` - Add extra buttons in Control panel
 
 #### How it works
 
@@ -12,8 +12,8 @@ are not allowed in tree tag
 #### TODO
 
 - [ ] Add the same in form
-- [ ] Add in list view etc 
-- [ ] Add in kanban view etc 
+- [x] Add in list view etc 
+- [x] Add in kanban view etc 
 - [ ] Add button type action also for buttons
 - [ ] Add possibility to add modifiers on the buttons,
 - [ ] Add possibility to add groups on the buttons,

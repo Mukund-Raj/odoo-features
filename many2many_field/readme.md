@@ -1,4 +1,4 @@
-# Many2many field option
+# `many2many_field`  - Many2many field option
 * This module exposed an option called initial_view so that we can control if we
 want to open search view or form view whenever we are clicking Add a line in tree view
 * Example: 
