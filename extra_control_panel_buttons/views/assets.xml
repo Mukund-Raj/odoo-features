@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="Extra CP buttons assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/extra_control_panel_buttons/static/js/kanban_controller.js"/>
+            <script type="text/javascript" src="/extra_control_panel_buttons/static/js/list_controller.js"/>
+        </xpath>
+    </template>
+
+</odoo>

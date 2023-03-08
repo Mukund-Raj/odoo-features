@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="start_backup_for_selected_dbs" model="ir.actions.server">
+            <field name="name">Start Backup</field>
+            <field name="state">code</field>
+            <field name="model_id" ref="model_backup_db"/>
+            <field name="binding_model_id" ref="model_backup_db"/>
+            <field name="binding_view_types">list,form</field>
+            <field name="code">records.action_start_db_backup()</field>
+        </record>
+
+        <!-- actions opening views on models -->
+
+        <record model="ir.actions.act_window" id="action_db_backup_see">
+            <field name="name">Databases Backups</field>
+            <field name="res_model">db_backup.db_backup</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_for_dbs">
+            <field name="name">To be backed up</field>
+            <field name="res_model">backup.db</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+    </data>
+</odoo>
